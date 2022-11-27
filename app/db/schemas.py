@@ -3,7 +3,6 @@ from typing import Optional
 
 
 class AccountSchema(BaseModel):
-    # name: Optional[str]
     login: Optional[str]
     password: Optional[str]
     
