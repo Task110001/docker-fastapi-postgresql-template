@@ -24,9 +24,6 @@ async def get_data():
 
 @app.post('/add-accounts')
 async def add_account(new_accounts: List[AccountSchema], db: Session = Depends(get_db)):
-    """
-    Функция добавления аккаунтов
-    """
     results = {}
     
     for _new_account in new_accounts:
